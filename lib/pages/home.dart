@@ -14,10 +14,10 @@ class _HomeState extends State<Home> {
 
     data = data.isNotEmpty ? data : ModalRoute.of(context).settings.arguments;
 
-    String bgImage = data['isDaytime'] ? 'morning.jpg' : 'night.jpg';
-    Color bgColor = data['isDaytime'] ? Colors.yellow[500] : Colors.blue[900];
+    String bgImage = data['isDaytime'] ? 'day.png' : 'night.png';
+    Color bgColor = data['isDaytime'] ? Colors.blue[300] : Colors.blue[900];
     Color txColor = data['isDaytime'] ? Colors.white : Colors.grey[200];
-    double heightSize = data['isDaytime'] ? 340.0 : 0;
+    double heightSize = 0;
     
     return Scaffold(
       backgroundColor: bgColor,
